@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Indiana Jones tribute map</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
-			content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+			content="width=device-width, initial-scale=1, user-scalable=no"
 		/>
+		<title>Indiana Jones tribute map - Mink Machine</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="content">
-			<img class="background" src="airplane.png" />
-			<div class="map">
-				<img class="map-image" src="worldmap.png" />
+		<main class="content" aria-label="Indiana Jones map tribute">
+			<img
+				class="background"
+				src="assets/airplane.png"
+				alt=""
+				aria-hidden="true"
+			/>
+			<div class="map" aria-hidden="true">
+				<img class="map-image" src="assets/worldmap.png" alt="" />
 				<svg
 					width="1600"
 					height="1200"
@@ -33,11 +38,12 @@
 				<div class="city gothenburg"></div>
 				<div class="city cairo"></div>
 			</div>
-		</div>
-		<div class="description">
+		</main>
+
+		<section class="description" aria-label="Map description">
 			<h1>Indiana Jones tribute map</h1>
 			<p>Example flight from Fairfield to Cairo.</p>
-			<p>Maps &#169; Google</p>
-		</div>
+			<p>Maps &copy; Google</p>
+		</section>
 	</body>
 </html>
